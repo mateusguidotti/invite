@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: roboto;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 230px;
+    font-size: 30px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    color: white;
+    background: linear-gradient(to top, #083D16, #06260E);
+}
+
+.form-container {
+    padding: 0 20%;
+    margin-top: 40px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-size: 40px;
+    font-weight: 400;
+    gap: 15px;
+    color: white;
+    margin-bottom: 30px
+}
+
+.form-container select,
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    color: white;
+    font-weight: 100;
+
+    && option {
+        background-color: rgb(30, 115, 66);
+    }
+}
+
+#input-2::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    /* Fundo branco do ícone */
+    color: #000;
+    /* Ícone preto */
+    border-radius: 30%;
+    /* Arredondado */
+    padding: 5px;
+    cursor: pointer;
+    /* Mostra que é clicável */
+}
+
+.form-container textarea {
+    height: 200px;
+    padding: 10px;
+}
+
+#send-btn {
+    width: 50%;
+    height: 80px;
+    background: linear-gradient(to right, #449033, #0E1B0B);
+    border: none;
+    border-radius: 24px;
+    font-size: 40px;
+    color: white;
+    margin: 20px 0 100px 0;
+}
+
+@media (max-width: 920px) {
+    header {
+        font-size: 26px;
+    }
+
+    .form-container {
+        padding: 0 5%;
+    }
+
+    .form-element {
+        font-size: 22px;
+    }
+
+    .form-element {
+        gap: 10px;
+    }
+
+    .form-element select,
+    .form-element input{
+        height: 45px;
+        font-size: 16px;
+        border: 2px solid white;
+    }
+
+    .form-element textarea {
+        font-size: 16px
+    }
+
+    #send-btn {
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        font-size: 12px;
+        height: 140px;
+        padding: 0 8px;
+    }
+}

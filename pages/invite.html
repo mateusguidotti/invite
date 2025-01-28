@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de date</title>
+    <link rel="stylesheet" href="../styles/invite.css">
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Oi, Leticia! Nesse convite, a escolha é totalmente sua...</h1>
+    </header>
+
+    <main class="form-container">
+        <div class="form-element">
+            <span class="label">
+                Qual será o nosso date?
+            </span>
+            <select name="date" id="input-1">
+                <option hidden selected value="">Selecione...</option>
+                <option value="Cinema">Cinema</option>
+                <option value="Café">Café</option>
+                <option value="Cerveja">Cerveja</option>
+                <option value="Jantar">Jantar</option>
+                <option value="Netflix">Netflix</option>
+                <option value="Passeio ao ar livre">
+                    Passeio ao ar livre
+                </option>
+                <option value="Pizzaria">Pizzaria</option>
+                <option value="Outro">Outro (Coloque nas observações)</option>
+            </select>
+        </div>
+
+        <div class="form-element">
+            <span class="label">
+                Data:
+            </span>
+            <input type="date" name="data" id="input-2">
+        </div>
+
+        <div class="form-element">
+            <span class="label">
+                Horário (opcional)
+            </span>
+            <select name="date" id="input-3">
+                <option hidden selected value="">Selecione...</option>
+                <option value="Manhã">Manhã</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noite">Noite</option>
+            </select>
+        </div>
+
+        <div class="form-element">
+            <span class="label">
+                Observação (opcional)
+            </span>
+
+            <textarea name="obs" id="input-4"
+                placeholder="Detalhe as suas observações para nosso date, se houver..."></textarea>
+        </div>
+
+        <center>
+            <button id="send-btn">Confirmar Presença</button>
+        </center>
+    </main>
+
+    <script src="../scripts/invite.js"></script>
+</body>
+
+</html>
